@@ -1,4 +1,4 @@
-<?php include 'view/header.php'; ?>
+<?php include ('view/header.php'); ?>
 <main>
             <p>Write an intro for the site here</p>
             
@@ -16,4 +16,4 @@
             </dl>
                 </div>
         </main>
-        <?php include 'view/footer.php'; ?>
+        <?php include('view/footer.php'); ?>
