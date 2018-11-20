@@ -1,5 +1,5 @@
-
-        <main>
+<?php include 'View/header.php'; ?>
+<main>
             <p>Write an intro for the site here</p>
             
             <div class="info" id="aboutme">
@@ -16,4 +16,4 @@
             </dl>
                 </div>
         </main>
-       
+        <?php include 'View/footer.php'; ?>
