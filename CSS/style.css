@@ -1,0 +1,54 @@
+body {
+    font-size: 100%;
+    font-family: Arial, sans-serif;
+    margin: auto;
+    width: 95%;
+    line-height: normal;
+    text-decoration-color: deeppink;
+    text-align: center;
+}
+h1 {
+    font-size: 2em;
+    text-align: center;
+    font-family: Charcoal, Impact, sans-serif;
+    border: auto;
+    padding: 5px;
+    font-size: 500%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: solid;
+    font-size: 100%;
+    
+}
+
+li {
+    float: left;
+    padding: 10px;
+    margin: 5px;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #ea4dd7;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
