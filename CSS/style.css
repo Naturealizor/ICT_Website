@@ -22,6 +22,7 @@ h1 {
     margin: 0 0 0 2.5%;
     outline: 2px dashed #dd0009;
     list-style-type: none;
+    
 }
 #mission {
     float: left;
@@ -35,7 +36,9 @@ h1 {
     margin: 0 2.5% 0 0;
     outline: 2px dashed #009554;
 }
-
+li {
+    padding: 2px;
+}
 footer {
     position: fixed;
     left: 0;

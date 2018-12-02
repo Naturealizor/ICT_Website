@@ -7,11 +7,8 @@
     
 </head>  
     <body>
-<<<<<<< HEAD
     
-=======
     <!-- <ul class="socialmedia"> -->
->>>>>>> db284322d2f61d21998cf65629875ceda23d4788
          
         
         <!--Header-->
@@ -25,7 +22,6 @@
         </div>
 
         <!--Nav-->
-<<<<<<< HEAD
 
         <nav id="nav">
         <!-- <li> <a href="Social_Media/Ashley%20(@ashesthehuman)%20%E2%80%A2%20Instagram%20photos%20and%20videos.html"><u>Instagram</u></a></li>  -->
@@ -33,20 +29,13 @@
         <!-- <li> <a href="Social_Media/Ashley%20Vieux%20(@ashesvieux)%20_%20Twitter.html"><u>Twitter</u></a></li>  -->
         <!-- This is Ashley's, delete before turning int -->
 
-        <li> <a href="Gallery/index.html"><u>Gallery</u></a></li>
-
-=======
->>>>>>> db284322d2f61d21998cf65629875ceda23d4788
         <nav id="navi">
         <li> <a href="index.php"><u>Home</u></a></li>
         <li> <a href="gallery/gallery_home.php"><u>Gallery</u></a></li>
         <li> <a href="ordering_screen/index.php"><u>Shop</u></a></li>
         <li> <a href="shopping_cart/index.php"><u>Cart</u></a></li>
         <li> <a href=><u>Shop</u></a></li>
-<<<<<<< HEAD
 
-=======
->>>>>>> db284322d2f61d21998cf65629875ceda23d4788
         </nav>
 
         </div>
@@ -62,8 +51,9 @@
             <h3>Login/Sign up here</h3>
             <dl>
                 <dt>Login in here or sign up below</dt>
-                <input type="text" name="user_name" value="">
-                <input type="text" name="password" value="">
+                <input type="text" name="user_name" value="test@test.com">
+                <input type="text" name="password" value="test">
+                <input type="hidden" name="action" value="login">
                 
                 
             </dl>
