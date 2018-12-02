@@ -1,11 +1,7 @@
-/* body {
-    margin: 0px;
-    padding: 0px;
-    background: #180E0B;
-    font-family: 'Raleway', sans-serif;
-    font-size: 11pt;
-    color: #000000;
-} */
+#logo {
+    text-align: center;
+    text-decoration-color: blueviolet;
+}
 body {
     font-size: 100%;
     font-family: Arial, sans-serif;
@@ -14,6 +10,7 @@ body {
     line-height: normal;
     text-align: center;
 }
+<<<<<<< HEAD
 #logo {
     font-size: 2em;
     text-align: center;
@@ -22,9 +19,55 @@ body {
     margin: 0; */
     background-color: #ea4dd7;
     overflow: hidden;
+=======
+h1 {
+    text-align: center;
+    font-family: Charcoal, Impact, sans-serif;
+    padding: 0px;
+    font-size: 500%;
+    background-color: lightgreen; 
+}
+#navi {
+    float: left;
+    width: 22.5%;
+    margin: 0 0 0 2.5%;
+    outline: 2px dashed #dd0009;
+    list-style-type: none;
+}
+#mission {
+    float: left;
+    width: 45%;
+    margin: 0 2.5%;
+    outline: 2px dashed #0053ae;
+}
+#signup {
+    float: left;
+    width: 22.5%;
+    margin: 0 2.5% 0 0;
+    outline: 2px dashed #009554;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    background-color: rgb(196, 189, 197);
+>>>>>>> 70a7355d7487037f6dfc7e9993c4e1a16e41193f
 } 
 
-ul {
+
+
+
+
+
+
+/* 
+  */
+
+/* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -49,14 +92,7 @@ li a {
 
 li a:hover {
     background-color: #ea4dd7;
-}
+} */
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    margin: auto;
-}
+
 
