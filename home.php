@@ -1,19 +1,17 @@
-<?php include ('view/header.php'); ?>
-<main>
-            <p>Write an intro for the site here</p>
-            
-            <div class="info" id="aboutme">
-            <h2>About me section</h2>
-            <p>write up a quick intro for yourself and anything pertaining to you.</p>
-            </div>
-            
-            <div class="gallery">
-            <h3>Galleries</h3>
-            <dl>
-                <dt>This is where you can put the title of different pages to click to</dt>
-                <dd>Description of the page you're linking to here</dd>
-                
-            </dl>
-                </div>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    </head>
+    <body>
+        <header>
+            <?php include("view/header.php"); ?>
+        </header>
+        <main>
+
         </main>
-        <?php include('view/footer.php'); ?>
+        <footer>
+            <?php include("view/footer.php"); ?>
+        </footer>
+    </body>
+</html>
