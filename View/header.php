@@ -12,8 +12,8 @@
         
         <!--Header-->
         <header>
-        <div id="header">
-            <div class="container">
+        <!-- <div id="header">
+            <div class="container"> -->
 
         <!--Logo-->
         <div id="logo">    
@@ -21,24 +21,23 @@
         </div>
 
         <!--Nav-->
-        <nav id="nav">
+        <nav id="navi">
         <li> <a href=><u>Home</u></a></li>
-        <li> <a href=><u>Gallery</u></a></li>
+        <li> <a href="gallery/gallery_home.php"><u>Gallery</u></a></li>
         <li> <a href=><u>Shop</u></a></li>
         </nav>
 
         </div>
         </header>
         <main>
-            <p>Write an intro</p>
             
-            <div class="info" id="aboutme">
-            <h2>About me section</h2>
-            <p>write up a quick intro for yourself and anything pertaining to you.</p>
+            <div class="info" id="mission">
+            <h2>IBakeICT Mission</h2>
+            <p>To provide the best damn cookies in all of Wichita.</p>
             </div>
             
-            <div class="gallery">
-            <h3>Galleries</h3>
+            <div class="login" id="signup">
+            <h3>Login/Sign up here</h3>
             <dl>
                 <dt>This is where you can put the title of different pages to click to</dt>
                 <dd>Description of the page you're linking to here</dd>

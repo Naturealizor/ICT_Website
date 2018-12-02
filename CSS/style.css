@@ -1,3 +1,7 @@
+#logo {
+    text-align: center;
+    text-decoration-color: blueviolet;
+}
 body {
     font-size: 100%;
     font-family: Arial, sans-serif;
@@ -7,13 +11,50 @@ body {
     text-align: center;
 }
 h1 {
-    font-size: 2em;
     text-align: center;
     font-family: Charcoal, Impact, sans-serif;
-    border: auto;
-    padding: 5px;
+    padding: 0px;
     font-size: 500%;
+    background-color: lightgreen; 
+}
+#navi {
+    float: left;
+    width: 22.5%;
+    margin: 0 0 0 2.5%;
+    outline: 2px dashed #dd0009;
+    list-style-type: none;
+}
+#mission {
+    float: left;
+    width: 45%;
+    margin: 0 2.5%;
+    outline: 2px dashed #0053ae;
+}
+#signup {
+    float: left;
+    width: 22.5%;
+    margin: 0 2.5% 0 0;
+    outline: 2px dashed #009554;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    background-color: rgb(196, 189, 197);
 } 
+
+
+
+
+
+
+
+/* 
+  */
 
 /* ul {
     list-style-type: none;
@@ -42,12 +83,5 @@ li a:hover {
     background-color: #ea4dd7;
 } */
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    margin: auto;
-}
+
 
