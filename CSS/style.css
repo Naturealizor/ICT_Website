@@ -9,19 +9,19 @@
 body {
     font-size: 100%;
     font-family: Arial, sans-serif;
-    margin: auto;
-    width: 95%;
+    margin: 0px;
+    padding: 0px;
     line-height: normal;
-    text-decoration-color: deeppink;
     text-align: center;
 }
-h1 {
+#logo {
     font-size: 2em;
     text-align: center;
     font-family: Charcoal, Impact, sans-serif;
-    border: auto;
-    padding: 5px;
-    font-size: 500%;
+    /* padding: 0;
+    margin: 0; */
+    background-color: #ea4dd7;
+    overflow: hidden;
 } 
 
 ul {
@@ -33,7 +33,7 @@ ul {
     font-size: 100%;
     
 }
-
+ 
 li {
     float: left;
     padding: 10px;
