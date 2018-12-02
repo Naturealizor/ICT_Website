@@ -10,16 +10,6 @@ body {
     line-height: normal;
     text-align: center;
 }
-<<<<<<< HEAD
-#logo {
-    font-size: 2em;
-    text-align: center;
-    font-family: Charcoal, Impact, sans-serif;
-    /* padding: 0;
-    margin: 0; */
-    background-color: #ea4dd7;
-    overflow: hidden;
-=======
 h1 {
     text-align: center;
     font-family: Charcoal, Impact, sans-serif;
@@ -55,7 +45,6 @@ footer {
     text-align: center;
     margin: auto;
     background-color: rgb(196, 189, 197);
->>>>>>> 70a7355d7487037f6dfc7e9993c4e1a16e41193f
 } 
 
 
