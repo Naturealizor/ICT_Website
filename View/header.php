@@ -7,7 +7,11 @@
     
 </head>  
     <body>
+<<<<<<< HEAD
     
+=======
+    <!-- <ul class="socialmedia"> -->
+>>>>>>> db284322d2f61d21998cf65629875ceda23d4788
          
         
         <!--Header-->
@@ -21,6 +25,7 @@
         </div>
 
         <!--Nav-->
+<<<<<<< HEAD
 
         <nav id="nav">
         <!-- <li> <a href="Social_Media/Ashley%20(@ashesthehuman)%20%E2%80%A2%20Instagram%20photos%20and%20videos.html"><u>Instagram</u></a></li>  -->
@@ -30,13 +35,18 @@
 
         <li> <a href="Gallery/index.html"><u>Gallery</u></a></li>
 
+=======
+>>>>>>> db284322d2f61d21998cf65629875ceda23d4788
         <nav id="navi">
         <li> <a href="index.php"><u>Home</u></a></li>
         <li> <a href="gallery/gallery_home.php"><u>Gallery</u></a></li>
         <li> <a href="ordering_screen/index.php"><u>Shop</u></a></li>
         <li> <a href="shopping_cart/index.php"><u>Cart</u></a></li>
         <li> <a href=><u>Shop</u></a></li>
+<<<<<<< HEAD
 
+=======
+>>>>>>> db284322d2f61d21998cf65629875ceda23d4788
         </nav>
 
         </div>
