@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<footer> 
-=======
 <html>
 <head>
         <meta charset="utf-8" />
@@ -12,7 +9,6 @@
         
 </body>
 </html><footer> 
->>>>>>> 4209e2005adeee9708b0da7045fbadf3c5f53bb2
         <p>&copy; 2018 Jacob Jordan </p>     
 </footer>
 </body>
