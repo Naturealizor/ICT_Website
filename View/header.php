@@ -22,9 +22,10 @@
 
         <!--Nav-->
         <nav id="navi">
-        <li> <a href=><u>Home</u></a></li>
+        <li> <a href="index.php"><u>Home</u></a></li>
         <li> <a href="gallery/gallery_home.php"><u>Gallery</u></a></li>
-        <li> <a href=><u>Shop</u></a></li>
+        <li> <a href="ordering_screen/index.php"><u>Shop</u></a></li>
+        <li> <a href="shopping_cart/index.php"><u>Cart</u></a></li>
         </nav>
 
         </div>
@@ -39,9 +40,13 @@
             <div class="login" id="signup">
             <h3>Login/Sign up here</h3>
             <dl>
-                <dt>This is where you can put the title of different pages to click to</dt>
-                <dd>Description of the page you're linking to here</dd>
+                <dt>Login in here or sign up below</dt>
+                <input type="text" name="user_name" value="">
+                <input type="text" name="password" value="">
+                
                 
             </dl>
                 </div>
         </main>
+
+
