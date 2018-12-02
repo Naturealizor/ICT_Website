@@ -7,7 +7,7 @@
     
 </head>  
     <body>
-    <!-- <ul class="socialmedia"> -->
+    
          
         
         <!--Header-->
@@ -21,11 +21,22 @@
         </div>
 
         <!--Nav-->
+
+        <nav id="nav">
+        <!-- <li> <a href="Social_Media/Ashley%20(@ashesthehuman)%20%E2%80%A2%20Instagram%20photos%20and%20videos.html"><u>Instagram</u></a></li>  -->
+        <!-- This is Ashley's, delete before turning int -->
+        <!-- <li> <a href="Social_Media/Ashley%20Vieux%20(@ashesvieux)%20_%20Twitter.html"><u>Twitter</u></a></li>  -->
+        <!-- This is Ashley's, delete before turning int -->
+
+        <li> <a href="Gallery/index.html"><u>Gallery</u></a></li>
+
         <nav id="navi">
         <li> <a href="index.php"><u>Home</u></a></li>
         <li> <a href="gallery/gallery_home.php"><u>Gallery</u></a></li>
         <li> <a href="ordering_screen/index.php"><u>Shop</u></a></li>
         <li> <a href="shopping_cart/index.php"><u>Cart</u></a></li>
+        <li> <a href=><u>Shop</u></a></li>
+
         </nav>
 
         </div>
