@@ -8,6 +8,7 @@ body {
     margin: auto;
     line-height: normal;
     text-align: center;
+    background-image: 
 }
 h1 {
     text-align: center;
@@ -20,7 +21,7 @@ h1 {
     float: left;
     width: 22.5%;
     margin: 0 0 0 2.5%;
-    outline: 2px dashed #dd0009;
+    outline: 2px ridge #dd0009;
     list-style-type: none;
     
 }
@@ -36,9 +37,34 @@ h1 {
     margin: 0 2.5% 0 0;
     outline: 2px dashed #009554;
 }
-li {
-    padding: 2px;
+#userName{
+    margin:
 }
+#password {
+    margin-left: 0px;
+}
+li {
+    
+    border-radius: 25px;
+    background: rgb(164, 80, 185);
+    padding: 10px; 
+    margin-bottom: 15px;
+    width: 115px;
+    height: 20px;
+    display: bock;
+    display: inline-block;
+    
+}
+u.li {
+    text-decoration-color: antiquewhite;
+}
+input[type=button] {
+    float: left;
+    margin: 10px;
+    margin-left: 30%;
+    padding: 4px;
+}
+
 footer {
     position: fixed;
     left: 0;
