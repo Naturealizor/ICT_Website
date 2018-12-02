@@ -36,11 +36,16 @@
 
         </div>
         </header>
-        <main>
+        <main> 
             
+
             <div class="info" id="mission">
             <h2>IBakeICT Mission</h2>
-            <p>To provide the best damn cookies in all of Wichita.</p>
+            <p>To provide the best damn cookies in all of Wichita. I've been baking custom cookies for quite a while now
+                making anything your celebration needs. While you're here, take a look through the gallery to see some of the
+                cookies I've made. </p>
+            <p>There's also a link to the shop off to your left if you feel like grabbing a few. If you
+                would like to join our mailing list or just create an account, you can login in or sign up over to the right!</p>
             </div>
             
             <div class="login" id="signup">
@@ -48,19 +53,18 @@
             <form action="../index.php" method="post">
                 <label for="userName"> Name:</label> 
                 <input type="text" name="userName" value="test@test.com" id="userName">
-                <br><br>
+                <br>
+                <br>
                 <label for="password"> Password:</label> 
                 <input type="password" name="password" value="test" id="password">
-                
                 <br>
                 <br>
                 <input type="submit" name="login" value="Login">
                 <input type="hidden" name="action" value="login">
                 <input type="submit" name="signup" value="Sign up">
             </form>
-                
-            
                 </div>
+            
         </main>
 
 
