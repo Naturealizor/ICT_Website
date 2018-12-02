@@ -1,3 +1,11 @@
+/* body {
+    margin: 0px;
+    padding: 0px;
+    background: #180E0B;
+    font-family: 'Raleway', sans-serif;
+    font-size: 11pt;
+    color: #000000;
+} */
 body {
     font-size: 100%;
     font-family: Arial, sans-serif;
@@ -14,7 +22,7 @@ h1 {
     border: auto;
     padding: 5px;
     font-size: 500%;
-}
+} 
 
 ul {
     list-style-type: none;
