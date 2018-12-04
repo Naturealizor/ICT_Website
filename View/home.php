@@ -1,6 +1,9 @@
 <html>
     <head>
         <title>Home</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="CSS/style.css">
     </head>
     <body>
@@ -12,8 +15,8 @@
             <h2>IBakeICT Mission</h2>
             <p>To provide the best damn cookies in all of Wichita. I've been baking custom cookies for quite a while now
                 making anything your celebration needs. While you're here, take a look through the gallery to see some of the
-                cookies I've made. </p>
-            <p>There's also a link to the shop off to your left if you feel like grabbing a few. If you
+                cookies I've made. 
+                There's also a link to the shop off to your left if you feel like grabbing a few. If you
                 would like to join our mailing list or just create an account, you can login in or sign up over to the right!</p>
             </div>
             

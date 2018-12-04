@@ -7,9 +7,12 @@
 </head>
 <body>
         
-</body>
-</html><footer> 
+
+<footer> 
         <p>&copy; 2018 Jacob Jordan | <?php echo date("Y"); ?> </p>     
 </footer>
 </body>
 </html>
+<?php
+
+?>
