@@ -16,12 +16,23 @@ h1 {
     background-color: lightgreen; 
     
 }
+p {
+    margin-top: 2px;
+    float: left;
+}
+h2 {
+    font-size: 2em;
+    text-align: center;
+    clear: left;
+}
+
 #navi {
     float: left;
     width: 22.5%;
     margin: 0 0 0 2.5%;
     outline: 2px ridge #dd0009;
     list-style-type: none;
+    /* column-count: 2; */
     
 }
 #mission {
@@ -30,6 +41,7 @@ h1 {
     margin: 0 2.5%;
     outline: 2px dashed #0053ae;
     font-size: 1.2em;
+    /* column-count: 2; */
 }
 #signup {
     float: left;
