@@ -15,8 +15,8 @@
             <h2>IBakeICT Mission</h2>
             <p>To provide the best damn cookies in all of Wichita. I've been baking custom cookies for quite a while now
                 making anything your celebration needs. While you're here, take a look through the gallery to see some of the
-                cookies I've made. 
-                There's also a link to the shop off to your left if you feel like grabbing a few. If you
+                cookies I've made. </p>
+                <p>There's also a link to the shop off to your left if you feel like grabbing a few. If you
                 would like to join our mailing list or just create an account, you can login in or sign up over to the right!</p>
             </div>
             
