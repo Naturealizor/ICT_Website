@@ -10,5 +10,10 @@
         $statement->execute();
         $statement->closeCursor();
     }
+    function modify_user($cust_ID, $email, $cust_first, $cust_last, $cust_DOB) {
+        global $db;
+        $query = 'UPDATE customers SET
+                  '
+    }
     
 ?>
