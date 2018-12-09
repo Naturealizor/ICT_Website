@@ -47,5 +47,5 @@ INSERT INTO products (product_ID, product_Name, product_Price) VALUES
 -- Creating the database user
 GRANT SELECT, INSERT, DELETE, UPDATE
 ON my_jacobjordan_final.*
-TO jacobjordan@localhost
+TO root
 IDENTIFIED BY 'test';

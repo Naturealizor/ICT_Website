@@ -5,7 +5,7 @@ $lifetime = 60 * 60 * 24 * 14;    // 2 weeks in seconds
 session_set_cookie_params($lifetime, '/');
 session_start();
 
-// require_once('model/config.php');
+require_once('model/config.php');
 require_once('model/users.php');
 
 // Creates an empty cart if needed

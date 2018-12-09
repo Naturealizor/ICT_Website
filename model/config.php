@@ -1,38 +1,19 @@
 <?php 
-// ob_start();
-// session_start();
+    $host = 'localhost';
+    $userName = 'root';
+    $pass = 'test';
+    $dbname = 'my_jacobjordan_final';
 
-// require_once(JacobJordan_final.sql);
-
-    define('DBHOST', 'localhost');
-    define('DBUSER', 'jacobjordan@localhost');
-    define('DBPASS', 'test');;
-    define('DBNAME', 'my_jacobjordan_final');
-
-
-    try {
-
+    $dsn = 'mysql:host=' . $host . ';dbname=' . $dbname;
+     
     
-    $db = new PDO("mysql:host=".DBHOST.";port=80;dbname=".DBNAME, DBUSER, DBPASS);
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch(PDOException $e) {
-    echo '<p class="danger">'.$e->getMessage().'</p>';
-    exit;
-}
+        $db = new PDO($dsn, $userName, $pass);
+        $stmt = $pdo->query('SELECT * FROM customers');
 
-include('users.php');
-$user = new User($db);
+        while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            echo $row['title'] . '<br>';
+        }
 
-
-
-    // $dsn = 'mysql:host=localhost;dbname=my_jacobjordan_final';
-    // $email = 'jacobjordan@localhost';
-    // $password = 'test';
-    // $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
-
-    // try {
-    //     $db = new PDO($dsn, $email, $password);
-    // } 
     // catch (PDOException $e) {
     //     $error_message = $e->getMessage();
     //     echo "<P>Error connecting to database: $error_message </P>";
@@ -40,9 +21,9 @@ $user = new User($db);
     //     exit();
     // }
 
-    // function display_db_error($error_message) {
-    //     global $app_path;
-    //     include 'errors/db_error.php';
-    //     exit;
-    // }
+    function display_db_error($error_message) {
+        global $app_path;
+        include 'errors/db_error.php';
+        exit;
+    }
 ?>

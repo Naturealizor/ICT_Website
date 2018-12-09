@@ -58,32 +58,27 @@
         <!-- <?php include('errors.php'); ?> -->
         <div class="input_group">
             <label>First Name:</label>
-            <input type="username" name="firstName" value="<?php echo $firstName; ?>">
+            <input type="username" name="firstName" value="">
         </div>
         <br>
         <div class="input_group">
             <label>Last Name:</label>
-            <input type="username" name="lastName" value="<?php echo $lastName; ?>">
+            <input type="username" name="lastName" value="">
         </div>
         <br>
         <div class="input_group">
             <label>Username:</label>
-            <input type="username" name="userName" value="<?php echo $userName; ?>">
+            <input type="username" name="userName" value=''>
         </div>
         <br>
         <div class="input_group">
-            <label>Email:</label>
-            <input type="email" name="email" value="<?php echo $email; ?>">
+            <label>Email Add:</label>
+            <input type="email" name="email" value="">
         </div>
         <br>
         <div class="input_group">
             <label>Password:</label>
             <input type="password" name="password_1">
-        </div>
-        <br>
-        <div class="input_group">
-            <label>Confirm Password:</label>
-            <input type="password" name="password_2">
         </div>
         <br>
         <div class="input_group">
