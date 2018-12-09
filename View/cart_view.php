@@ -8,6 +8,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/style.css" />
 </head>
 <body>
-    
+    <p>Hello</p>
 </body>
 </html>

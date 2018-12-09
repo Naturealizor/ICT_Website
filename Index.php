@@ -1,7 +1,7 @@
 <?php 
 //Setting up cookie params and session management
-// $lifetime = 60 * 60 * 24 * 14;    // 2 weeks in seconds
-$lifetime = 0;
+$lifetime = 60 * 60 * 24 * 14;    // 2 weeks in seconds
+// $lifetime = 0;
 session_set_cookie_params($lifetime, '/');
 session_start();
 
@@ -29,10 +29,19 @@ switch($action) {
     case 'login':
         $email = filter_input(INPUT_POST, 'email');
         $password = filter_input(INPUT_POST, 'password');
+        break;
+    case 'show_cart':
+        include('view/cart_view.php');
+        break;
+    case 'empty_cart':
+        unset($_SESSION['cart12']);
+        include('view/cart_view.php');
+        break;
 }
 
 
 
-include('view/home.php'); ?>
+include('view/home.php'); 
+?>
        
        

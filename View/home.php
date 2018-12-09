@@ -9,8 +9,24 @@
     <body>
         <header>
             <?php include("view/header.php"); ?>
+        
+        <div id="logo">    
+            <h1>IBakeICT</h1>
+        </div>
+
         </header>
         <main>
+            
+        <!--Nav-->
+        <nav id="navi">
+        <h2>Links to each page</h2>
+        <li> <a href="Index.php"><u>Home</u></a></li><br>
+        <li> <a href="view/gallery_home.php"><u>Gallery / Shop</u></a></li><br>
+        <!-- <li> <a href="ordering_screen/index.php"><u>Shop</u></a></li><br> -->
+        <li> <a href="view/cart_view.php"><u>Cart</u></a></li><br>
+        
+        </nav>
+
         <div id="mission">
             <h2>IBakeICT Mission</h2>
             <p>To provide the best damn cookies in all of Wichita. I've been baking custom cookies for quite a while now
