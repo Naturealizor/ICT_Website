@@ -1,3 +1,4 @@
+<?php include("view/header.php"); ?>
 <html>
     <head>
         <title>Home</title>
@@ -8,7 +9,7 @@
     </head>
     <body>
         <header>
-            <?php include("view/header.php"); ?>
+            
         
         <div id="logo">    
             <h1>IBakeICT</h1>
