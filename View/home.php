@@ -21,7 +21,7 @@
         <nav id="navi">
         <h2>Links to each page</h2>
         <li> <a href="Index.php"><u>Home</u></a></li><br>
-        <li> <a href="view/gallery_home.php"><u>Gallery / Shop</u></a></li><br>
+        <li> <a href="view/gallery_view.php"><u>Gallery</u></a></li><br>
         <!-- <li> <a href="ordering_screen/index.php"><u>Shop</u></a></li><br> -->
         <li> <a href="view/cart_view.php"><u>Cart</u></a></li><br>
         
@@ -38,7 +38,7 @@
             
             <div id="signup">
             <h3>Login or Sign up for an account here</h3>
-            <form action="../index.php" method="post">
+            <form action="Index.php" method="post">
                 <label for="userName"> Name:</label> 
                 <input type="text" name="userName" value="" id="userName" required>
                 <br>
@@ -51,7 +51,7 @@
                 <input type="hidden" name="action" value="login">
                 </form>
 
-                <form action="registration/signup.php" method="post">
+                <form action="view/signup_view.php" method="post">
                 <input type="submit" name="signup" value="Sign up">
             </form>
                 </div>

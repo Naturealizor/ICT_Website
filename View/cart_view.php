@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+
 <html>
 <head>
 <meta charset="utf-8" />
@@ -10,4 +10,7 @@
 <body>
     <p>Hello</p>
 </body>
+<footer>
+        <?php include("view/footer.php"); ?>
+</footer>
 </html>

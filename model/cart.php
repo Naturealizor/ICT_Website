@@ -13,7 +13,7 @@ function add_item($product_ID, $product_qty) {
     }
 
 // Add item
-    $price = $products[$]
+    // $price = $products[$]
 }
 
 ?>
