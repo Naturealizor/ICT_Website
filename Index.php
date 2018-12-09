@@ -1,11 +1,20 @@
 <?php 
 //Setting up cookie params and session management
-$lifetime = 60 * 60 * 24 * 14;    // 2 weeks in seconds
+// $lifetime = 60 * 60 * 24 * 14;    // 2 weeks in seconds
+$lifetime = 0;
 session_set_cookie_params($lifetime, '/');
 session_start();
 
 require_once('model/config.php');
 require_once('model/user_db.php');
+
+if (empty($_SESSION['cart'])) {$_SESSION['cart'] = array();}
+
+$products = array();
+$products['1'] = array('name' => 'Dress', 'cost' => '10.00');
+$products['2'] = array('name' => 'Big Foot', 'cost' => '10.00');
+$products['3'] = array('name' => 'Donut', 'cost' => '10.00');
+$products['4'] = array('name' => 'Misc', 'cost' => '10.00');
 
 //Getting the action function
 $action = filter_input(INPUT_POST, 'action');
