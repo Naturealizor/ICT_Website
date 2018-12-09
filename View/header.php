@@ -17,10 +17,10 @@
         <nav id="navi">
         <h2>Links to each page</h2>
         <li> <a href="index.php"><u>Home</u></a></li><br>
-        <li> <a href="gallery/gallery_home.php"><u>Gallery</u></a></li><br>
-        <li> <a href="ordering_screen/index.php"><u>Shop</u></a></li><br>
+        <li> <a href="gallery/gallery_home.php"><u>Gallery / Shop</u></a></li><br>
+        <!-- <li> <a href="ordering_screen/index.php"><u>Shop</u></a></li><br> -->
         <li> <a href="shopping_cart/index.php"><u>Cart</u></a></li><br>
-        <li> <a href=><u>Shop</u></a></li>
+        
         </nav>
         
         </header>

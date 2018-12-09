@@ -2,7 +2,7 @@
     function add_user($email, $password) {
         global $db;
         $password = shal($email . $password);
-        $query = 'INSERT INTO customers (customerEmail, password)
+        $query = 'INSERT INTO customers (email, password)
                   VALUES (:email, :password)';
         $statement = $db->prepare($query);
         $statement->bindValue(':email', $email);
@@ -10,4 +10,5 @@
         $statement->execute();
         $statement->closeCursor();
     }
+    
 ?>

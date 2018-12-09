@@ -35,7 +35,7 @@
                 <input type="hidden" name="action" value="login">
                 </form>
 
-                <form action="login.php" method="post">
+                <form action="registration/signup.php" method="post">
                 <input type="submit" name="signup" value="Sign up">
             </form>
                 </div>
