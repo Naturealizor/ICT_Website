@@ -34,7 +34,15 @@ CREATE TABLE admin (
 );
 
 INSERT INTO admin (adminID, adminEmail, password) VALUES
-(1, 'admin@jacobjordan.com', 'test')
+(1, 'admin@jacobjordan.com', 'test');
+
+INSERT INTO products (product_ID, product_Name, product_Price) VALUES
+(1, 'big_foot', '10.00'),
+(2, 'dress', '10.00'),
+(3, 'dognut', '10.00'),
+(4, 'just_a_cookie', '10.00'),
+(5, 'dress', '10.00');
+
 -- Creating the database user
 GRANT SELECT, INSERT, DELETE, UPDATE
 ON my_jacobjordan_final.*

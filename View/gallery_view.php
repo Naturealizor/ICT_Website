@@ -17,7 +17,7 @@
             margin: 18px;
             border: 1px solid #ccc;
             float: left;
-            width: 400px;
+            width: 300px;
         }
 
         div.gallery:hover {
@@ -27,11 +27,18 @@
         div.gallery img {
             width: 100%;
             height: auto;
+        } 
+        button {
+            
+            margin: 15px 10px;
+            margin-left: 100px;
+            
         }
 
         div.desc {
-            padding: 15px;
+            padding: 10px;
             text-align: center;
+            height: 10%;
         }
         footer {
             position: fixed;
@@ -42,6 +49,7 @@
             margin: auto;
             background-color: rgb(196, 189, 197);
         } 
+       
 
     </style>
 
@@ -54,7 +62,8 @@
         <a target="_blank" href="../images/big_foot.jpg">
             <img src="../images/big_foot.jpg" alt="Big Foot" width="300" height="200">
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Make any party <strong>wild</strong> with these Big Foot cookies. Order any amount starting at a dozen.</div>
+        <button><a href=".?action=add_to_cart">Add to cart</a></button>
     </div>
 
     <div class="gallery">

@@ -27,14 +27,14 @@
         $statement->execute();
         $statement->closeCursor();
     }
-    function is_valid_user($email, $password) {
+    function is_valid_user($email, $pass) {
         global $db;
-        $password = sha1($email . $password);
+        $password = sha1($email . $pass);
         $query = 'SELECT cust_ID FROM customers
-                WHERE email = :email AND password = :password';
+                WHERE email = :email AND pass = :pass';
         $statement = $db->prepare($query);
         $statement->bindValue(':email', $email);
-        $statement->bindValue(':password', $password);
+        $statement->bindValue(':pass', $pass);
         $statement->execute();
         $_SESSION['user'] = $statement->fetchAll();
         $valid = ($statement->rowCount() == 1);
