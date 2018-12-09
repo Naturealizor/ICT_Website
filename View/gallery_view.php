@@ -17,7 +17,7 @@
             margin: 18px;
             border: 1px solid #ccc;
             float: left;
-            width: 300px;
+            width: 225px;
         }
 
         div.gallery:hover {
@@ -31,7 +31,7 @@
         button {
             
             margin: 15px 10px;
-            margin-left: 100px;
+            margin-left: 70px;
             
         }
 
@@ -70,28 +70,32 @@
         <a target="_blank" href="../images/cookie_dress.jpg">
             <img src="../images/cookie_dress.jpg" alt="Dress" width="300" height="200">
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Any shape you can think of can be crafted into a cookie, so hit me with whatever you have. Make it challenging.</div>
+        <button><a href=".?action=add_to_cart">Add to cart</a></button>
     </div>
 
     <div class="gallery">
         <a target="_blank" href="../images/dognut.jpg">
             <img src="../images/dognut.jpg" alt="Dognuts" width="300" height="200">
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Are they cookies or dognuts? Well..they're cookies, but we can always pretend!</div>
+        <button><a href=".?action=add_to_cart">Add to cart</a></button>
     </div>
 
     <div class="gallery">
         <a target="_blank" href="../images/just_a_cookie.jpg">
             <img src="../images/just_a_cookie.jpg" alt="Just a cookie" width="300" height="200">
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">You can even pick your own style of frosting, or you can just leave it to me if all you want is some darn fine cookies.</div>
+        <button><a href=".?action=add_to_cart">Add to cart</a></button>
     </div>
     
     <div class="gallery">
         <a target="_blank" href="../images/strawberry.jpg">
             <img src="../images/strawberry.jpg" alt="Strawberry" width="300" height="200">
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Yep...that's a strawberry. What else you got?</div>
+        <button><a href=".?action=add_to_cart">Add to cart</a></button>
     </div>
 
 

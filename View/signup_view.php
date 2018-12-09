@@ -39,7 +39,12 @@
                 padding: 0px;
                 font-size: 500%;
                 background-color: lightgreen; 
-
+            }
+            form {
+                border: solid;
+                width: 45%;
+                margin-left: 300px;
+                padding: 10px;
             }
         
         </style>
@@ -49,11 +54,21 @@
     <h1>IBakeICT</h1>
     <h2>Register Your Account!</h2>
 
-    <form method="post" action="register.php">
+    <form method="post" action="Index.php">
         <!-- <?php include('errors.php'); ?> -->
         <div class="input_group">
+            <label>First Name:</label>
+            <input type="username" name="firstName" value="<?php echo $firstName; ?>">
+        </div>
+        <br>
+        <div class="input_group">
+            <label>Last Name:</label>
+            <input type="username" name="lastName" value="<?php echo $lastName; ?>">
+        </div>
+        <br>
+        <div class="input_group">
             <label>Username:</label>
-            <input type="username" name="username" value="<?php echo $username; ?>">
+            <input type="username" name="userName" value="<?php echo $userName; ?>">
         </div>
         <br>
         <div class="input_group">
@@ -72,7 +87,7 @@
         </div>
         <br>
         <div class="input_group">
-            <button type="submit" class="btw" name="reg_user">Register</button>
+            <button type="submit" class="btw" name="register_user">Register</button>
         </div>
     </form>
 </body>

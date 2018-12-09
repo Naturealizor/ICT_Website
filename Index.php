@@ -8,17 +8,13 @@ session_start();
 // require_once('model/config.php');
 require_once('model/users.php');
 
+// Creates an empty cart if needed
 if (empty($_SESSION['cart'])) {
     $cart = array();
 } else {
     $cart = $_SESSION['cart'];
 }
 
-// $products = array();
-// $products['1'] = array('name' => 'Dress', 'cost' => '10.00');
-// $products['2'] = array('name' => 'Big Foot', 'cost' => '10.00');
-// $products['3'] = array('name' => 'Donut', 'cost' => '10.00');
-// $products['4'] = array('name' => 'Misc', 'cost' => '10.00');
 
 require_once('model/cart.php');
 
@@ -27,13 +23,17 @@ $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
     $action = filter_input(INPUT_GET, 'action');
     if ($action == NULL) {
-        $action = 'login';
+        $action = 'register_user';
     }
 }
 
 switch($action) {
-    case 'signup':
-        include('view/cart_view.php');
+    case 'register_user':
+        $firstName = filter_input(INPUT_POST, 'firstName');
+        $lastName = filter_input(INPUT_POST, 'lastName');
+        $userName = filter_input(INPUT_POST, 'userName');
+        $email = filter_input(INPUT_POST, 'email');
+        // include('view/cart_view.php');
         break;
     case 'add_to_cart':
 

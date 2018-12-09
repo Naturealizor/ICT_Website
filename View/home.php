@@ -53,7 +53,7 @@
                 </form>
                 
                 <form action="view/signup_view.php" method="post">
-                <input type="submit" name="signup" value="Sign up">
+                <input type="submit" name="registration_page" value="Sign up">
             </form>
                 </div>
 
