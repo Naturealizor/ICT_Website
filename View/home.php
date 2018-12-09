@@ -50,11 +50,12 @@
                 <input type="submit" name="login" value="Login">
                 <input type="hidden" name="action" value="login">
                 </form>
-
+                
                 <form action="view/signup_view.php" method="post">
                 <input type="submit" name="signup" value="Sign up">
             </form>
                 </div>
+
 
         </main>
         <footer>
