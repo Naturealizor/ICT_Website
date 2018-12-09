@@ -22,7 +22,7 @@ h2 {
     clear: left;
 }
 #mission {
-    float: center;
+    text-align: center;
     width: 45%;
     margin: 0 2.5%;
     outline: 2px dashed #0053ae;
