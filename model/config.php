@@ -2,7 +2,7 @@
     $host = 'localhost';
     $userName = 'root';
     $pass = 'test';
-    $dbname = 'my_jacobjordan_final';
+    $dbname = 'my_jacobjordan_db';
 
     $dsn = 'mysql:host=' . $host . ';dbname=' . $dbname;
      
