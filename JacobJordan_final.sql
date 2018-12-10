@@ -10,8 +10,6 @@ CREATE TABLE customers (
     userName        VARCHAR(45)     NOT NULL,
     firstName       VARCHAR(45)     NOT NULL,
     lastName        VARCHAR(45)     NOT NULL,
-    cust_DOB        DATETIME        NOT NULL,
-    cust_timestamp  DATETIME,
     PRIMARY KEY (cust_ID),
     UNIQUE (email)
 );
@@ -20,7 +18,7 @@ CREATE TABLE products (
     product_ID      INT             NOT NULL        AUTO_INCREMENT,
     product_Name    VARCHAR(45)     NOT NULL        UNIQUE,
     product_Price   DOUBLE,
-    product_qty     INT,
+    product_quantity     INT,
     PRIMARY KEY (product_ID),
     UNIQUE (product_Name)
 );

@@ -5,7 +5,7 @@ $lifetime = 60 * 60 * 24 * 14;    // 2 weeks in seconds
 session_set_cookie_params($lifetime, '/');
 session_start();
 
-require_once('model/config.php');
+// require_once('model/config.php');
 require_once('model/users.php');
 
 // Creates an empty cart if needed
@@ -36,17 +36,21 @@ switch($action) {
         // include('view/cart_view.php');
         break;
     case 'add_to_cart':
-
-//    case 'login':
-//        $email = filter_input(INPUT_POST, 'email');
-//        $password = filter_input(INPUT_POST, 'password');
-//        if (is_valid_login($email, $password)) {
-//            $_SESSION['is_valid_admin'] = true;
-//            include('Index.php');
-//         } else {
-//             $login_message = 'That was not the correct email or password. Please try again';
-//         }
-//        break;
+        $product_ID = filter_input(INPUT_POST, 'product_ID');
+        $product_quantity = filter_input(INPUT_POST, 'product_quantity');
+        add_item($product_ID, $product_quantity);
+        include('view/cart_view.php');
+        break;
+    case 'login':
+        $email = filter_input(INPUT_POST, 'email');
+        $pass = filter_input(INPUT_POST, 'pass');
+        if (is_valid_login($email, $pass)) {
+            $_SESSION['is_valid_user'] = true;
+            include('Index.php');
+            } else {
+                $login_message = 'That was not the correct email or password. Please try again';
+            }
+        break;
    case 'modify_user':
        $cust_ID = filter_input(INPUT_POST, 'cust_ID');
        break;
@@ -58,3 +62,13 @@ include('view/home.php');
 ?>
        
        
+
+
+
+
+
+
+
+
+
+      

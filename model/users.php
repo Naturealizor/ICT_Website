@@ -1,27 +1,25 @@
 <?php
-    function add_user($email, $password) {
+    function add_user($email, $pass) {
         global $db;
-        $password = shal($email . $password);
-        $query = 'INSERT INTO customers (email, password)
-                  VALUES (:email, :password)';
+        $password = shal($email . $pass);
+        $query = 'INSERT INTO customers (email, pass)
+                  VALUES (:email, :pass)';
         $statement = $db->prepare($query);
         $statement->bindValue(':email', $email);
-        $statement->bindValue(':password', $password);
+        $statement->bindValue(':pass', $pass);
         $statement->execute();
         $statement->closeCursor();
     }
-    function modify_user($cust_ID, $email, $firstName, $lastName, $DOB) {
+    function modify_user($cust_ID, $email, $firstName, $lastName) {
         global $db;
         $query = 'UPDATE customers SET
                   firstName = :firstName,
                   lastName = :lastName,
-                  DOB = :DOB,
                   email = :email,
                   cust_ID = :cust_ID';
         $statement = $db->prepare($query);
         $statement->bindValue(':firstName', $firstName);
         $statement->bindValue(':lastName', $lastName);
-        $statement->bindValue(':DOB', $DOB);
         $statement->bindValue(':email', $email);
         $statement->bindValue(':cust_ID', $cust_ID);
         $statement->execute();

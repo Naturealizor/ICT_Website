@@ -1,11 +1,11 @@
-<?php include("view/header.php"); ?>
+<?php include("header.php"); ?>
 <html>
     <head>
         <title>Home</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/style.css">
     </head>
     <body>
         <header>
@@ -23,7 +23,6 @@
         <h2>Links to each page</h2>
         <li> <a href="Index.php"><u>Home</u></a></li><br>
         <li> <a href="view/gallery_view.php"><u>Gallery</u></a></li><br>
-        <!-- <li> <a href="ordering_screen/index.php"><u>Shop</u></a></li><br> -->
         <li> <a href="view/cart_view.php"><u>Cart</u></a></li><br>
         
         </nav>
@@ -60,7 +59,7 @@
 
         </main>
         <footer>
-            <?php include("view/footer.php"); ?>
+            <?php include("footer.php"); ?>
         </footer>
     </body>
 </html>

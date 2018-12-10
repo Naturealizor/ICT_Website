@@ -38,7 +38,7 @@
         div.desc {
             padding: 10px;
             text-align: center;
-            height: 10%;
+            height: 7%;
         }
         footer {
             position: fixed;
