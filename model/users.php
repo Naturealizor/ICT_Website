@@ -34,7 +34,7 @@
         $statement->bindValue(':email', $email);
         $statement->bindValue(':pass', $pass);
         $statement->execute();
-        $_SESSION['user'] = $statement->fetchAll();
+        $_SESSION['customer'] = $statement->fetchAll();
         $valid = ($statement->rowCount() == 1);
         $statement->closeCursor();
         return $valid;
