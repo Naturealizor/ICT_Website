@@ -15,10 +15,10 @@ CREATE TABLE customers (
 );
 
 CREATE TABLE products (
-    product_ID      INT             NOT NULL        AUTO_INCREMENT,
-    product_Name    VARCHAR(45)     NOT NULL        UNIQUE,
-    product_Price   DOUBLE,
-    product_quantity     INT,
+    product_ID          INT             NOT NULL        AUTO_INCREMENT,
+    product_Name        VARCHAR(45)     NOT NULL        UNIQUE,
+    product_Price       DOUBLE,
+    product_quantity    INT,
     PRIMARY KEY (product_ID),
     UNIQUE (product_Name)
 );
@@ -33,7 +33,7 @@ CREATE TABLE admin (
 );
 
 INSERT INTO admin (adminID, adminEmail, password) VALUES
-(1, 'admin@jacobjordan.com', 'test');
+(1, 'test@test.com', 'test');
 
 INSERT INTO products (product_ID, product_Name, product_Price) VALUES
 (1, 'big_foot', '10.00'),
@@ -45,5 +45,5 @@ INSERT INTO products (product_ID, product_Name, product_Price) VALUES
 -- Creating the database user
 GRANT SELECT, INSERT, DELETE, UPDATE
 ON my_jacobjordan_final.*
-TO root
+TO test@test.com
 IDENTIFIED BY 'test';

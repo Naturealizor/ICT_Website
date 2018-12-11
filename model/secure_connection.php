@@ -1,4 +1,5 @@
 <?php
+require_once('config.php');
     //Make sure the page uses a secure connection
     $https = filter_input(INPUT_SERVER, 'HTTPS');
     if (!$https) {
