@@ -9,15 +9,22 @@
     try {
         $db = new PDO($dsn, $userName, $pass);
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        $stmt = $db-prepare("INSERT INTO customers (email, pass, firstName, lastName, userName) VALUES (?, ?, ?, ?, ?)");
+        $stmt->bind_param("sssss", $email, $pass, $firstName, $lastName, $userName);
+
+        $email = "tester@test.com";
+        $pass = "test";
+        $firstName = "Jake";
+        $lastName = "Jordan";
+        $userName = "Naturealizor";
+        $stmt->execute();
+
+
         echo '<p> You are connected to the database</p>';
     } catch (PDOException $e) {
         $error_message = $e->getMessage();
         echo "<p>An error occured while connecting to the database: $error_message</p>";
     }
 
-    function display_db_error($error_message) {
-        global $app_path;
-        include 'errors/db_error.php';
-        exit;
-    }
 ?>

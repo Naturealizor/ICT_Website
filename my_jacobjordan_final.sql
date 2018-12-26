@@ -4,31 +4,57 @@ USE my_jacobjordan_final;
 
 -- Create the table
 CREATE TABLE customers (
-    cust_ID         INT             NOT NULL        AUTO_INCREMENT,
-    email           VARCHAR(45)     NOT NULL        UNIQUE,
-    pass            VARCHAR(45)     NOT NULL,
-    userName        VARCHAR(45)     NOT NULL,
-    firstName       VARCHAR(45)     NOT NULL,
-    lastName        VARCHAR(45)     NOT NULL,
+    cust_ID         INT              NOT NULL        AUTO_INCREMENT,
+    email           VARCHAR(255)     NOT NULL        UNIQUE,
+    pass            VARCHAR(255)     NOT NULL,
+    userName        VARCHAR(255)     NOT NULL,
+    firstName       VARCHAR(255)     NOT NULL,
+    lastName        VARCHAR(255)     NOT NULL,
     PRIMARY KEY (cust_ID),
-    UNIQUE (email)
+    UNIQUE INDEX email (email),
+    INDEX firstName (firstName)
 );
 
 CREATE TABLE products (
     product_ID          INT             NOT NULL        AUTO_INCREMENT,
-    product_Name        VARCHAR(45)     NOT NULL        UNIQUE,
-    product_Price       DOUBLE,
+    product_Name        VARCHAR(255)    NOT NULL        UNIQUE,
+    product_Price       DECMIAL,
     product_quantity    INT,
     PRIMARY KEY (product_ID),
-    UNIQUE (product_Name)
+    UNIQUE INDEX product_Name (product_Name)
 );
-
+CREATE TABLE customer_addresses (
+    address_ID      INT              NOT NULL        AUTO_INCREMENT,
+    address_1       VARCHAR(255)     NOT NULL,
+    cust_ID         INT              NOT NULL,
+    order_ID        INT              NOT NULL,
+    product_ID      INT              NOT NULL,
+    address_2       VARCHAR(255)     NOT NULL,
+    address_3       VARCHAR(255)     NOT NULL,
+    city            VARCHAR(255)     NOT NULL,
+    state           VARCHAR(45)      NOT NULL,
+    zip_Code        INT              NOT NULL,  
+    PRIMARY KEY (address_ID),
+    UNIQUE INDEX state (state),
+    FOREIGN KEY (cust_ID) REFERENCES customers(cust_ID),
+    FOREIGN KEY (order_ID) REFERENCES orders(order_ID),
+    FOREIGN KEY (product_ID) REFERENCES products(product_ID)        
+);
+CREATE TABLE orders (
+    order_ID        INT              NOT NULL        AUTO_INCREMENT,
+    invoice_Num     VARCHAR(255)     NOT NULL,
+    cust_ID         INT              NOT NULL,
+    product_ID      INT              NOT NULL,
+    PRIMARY KEY (order_ID),
+    FOREIGN KEY (cust_ID) REFERENCES customers(cust_ID),
+    FOREIGN KEY (product_ID) REFERENCES products(product_ID)
+);
 CREATE TABLE admin (
-    adminID         INT             NOT NULL        AUTO_INCREMENT,
-    adminEmail      VARCHAR(45)     NOT NULL,
-    password        VARCHAR(45)     NOT NULL,
-    adminFirst      VARCHAR(45),
-    adminLast       VARCHAR(45),
+    adminID         INT              NOT NULL        AUTO_INCREMENT,
+    adminEmail      VARCHAR(255)     NOT NULL,
+    password        VARCHAR(255)     NOT NULL,
+    adminFirst      VARCHAR(255),
+    adminLast       VARCHAR(255),
     PRIMARY KEY (adminID)
 );
 
@@ -44,6 +70,6 @@ INSERT INTO products (product_ID, product_Name, product_Price) VALUES
 
 -- Creating the database user
 GRANT SELECT, INSERT, DELETE, UPDATE
-ON my_jacobjordan_final.*
+ON *
 TO test@test.com
 IDENTIFIED BY 'test';

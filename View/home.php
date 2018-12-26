@@ -1,13 +1,4 @@
 <?php include("header.php"); ?>
-<html>
-    <head>
-        <title>Home</title>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="../CSS/style.css">
-    </head>
-    <body>
         <header>
             
         
@@ -16,7 +7,7 @@
         </div>
 
         </header>
-        <main>
+    <main>
             
         <!--Nav-->
         <nav id="navi">
@@ -38,7 +29,7 @@
             
             <div id="signup">
             <h3>Login or Sign up for an account here</h3>
-            <form action="Index.php" method="post">
+            <form action="." method="post">
                 <label for="userName"> Name:</label> 
                 <input type="text" name="userName" value="" id="userName" required>
                 <br>
@@ -55,11 +46,5 @@
                 <input type="submit" name="registration_page" value="Sign up">
             </form>
                 </div>
-
-
-        </main>
-        <footer>
-            <?php include("footer.php"); ?>
-        </footer>
-    </body>
-</html>
+<?php include("footer.php"); 
+?>
