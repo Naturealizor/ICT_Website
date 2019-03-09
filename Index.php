@@ -1,11 +1,11 @@
 <?php 
 //Setting up cookie params and session management
 $lifetime = 60 * 60 * 24 * 14;    // 2 weeks in seconds
-session_set_cookie_params($lifetime, '/');
-session_start();
+// session_set_cookie_params($lifetime, '/');
+// session_start();
 
-require_once('model/config_db.php');
-require_once('model/users.php');
+// require_once('model/config_db.php');
+// require_once('model/users.php');
 
 // Creates an empty cart if needed
 if (empty($_SESSION['cart'])) {
