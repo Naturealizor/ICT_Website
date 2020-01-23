@@ -1,0 +1,5 @@
+To Do list:
+
+Finish the login/sign up form
+Figure out and add the PHP
+Keep working on the CSS
